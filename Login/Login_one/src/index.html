@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Link Up</title>
+    <!-- Firestore -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+<div class="container mt-3">
+        
+                <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+                <a class="navbar-brand, text-primary, display-4">Link Up</a>
+                        <input id="email" type ="email" placeholder="Ingresa email" class="form-control mr-sm-2 my-3">
+                        <input id="pass" type ="password" placeholder="Ingresa password" class="form-control mr-sm-2 my-3">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" id="register">Registrarse</button>
+                  <button class="btn btn-outline-primary my-2 my-sm-0 ml-2" id="access" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión</button>
+                </div>
+              </nav>
+            </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Bienvenido a Link Up</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <input id="email-ac" type ="email" placeholder="Ingresa email" class="form-control">
+                    <div class="mt-2"></div>
+                    <input id="pass-ac" type ="password" placeholder="Ingresa password" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary" id="access">Entrar</button>
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <section id="user-data">
+
+    </section>
+
+    
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDOvN36a9Ec3svVs5XpAwUF0gd9wBaVy7c",
+        authDomain: "social-network-f8e7a.firebaseapp.com",
+        databaseURL: "https://social-network-f8e7a.firebaseio.com",
+        projectId: "social-network-f8e7a",
+        storageBucket: "social-network-f8e7a.appspot.com",
+        messagingSenderId: "454382512914"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="data.js"></script> -->
+    <script src="main.js"></script>
+    
+</body>
+</html>
